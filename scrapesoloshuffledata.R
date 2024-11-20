@@ -77,5 +77,5 @@ for (spec in class_spec){
   req <- curl_fetch_memory(paste0('https://us.api.blizzard.com/data/wow/pvp-season/',season,'/pvp-leaderboard/shuffle-',spec,'?namespace=dynamic-us&locale=en_US'), handle = h)
   req <- jsonlite::prettify(rawToChar(req$content))
   data <- fromJSON(req)
-  write.csv(data, paste0('C:\\Users\\mathe\\Desktop\\Soloshuffledata\\shuffle-',spec,'-',Sys.Date(),'.csv'))
+  write.csv(data, paste0('C:\\shuffle-',spec,'-',Sys.Date(),'.csv'))
 }
