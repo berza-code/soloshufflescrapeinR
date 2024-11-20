@@ -22,7 +22,7 @@ handle_setheaders(h,
                   "Authorization" = paste0("Bearer ",createAccessToken('your API key goes here','your API secret goes here')$access_token)
 )
 
-season <- 38 # current season's ID
+season <- 38 # current season's ID as of november 2024
 
 class_spec <- c(
                 #healers
